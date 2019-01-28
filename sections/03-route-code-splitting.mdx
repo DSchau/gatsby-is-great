@@ -1,0 +1,55 @@
+import { FullScreenCode, Main, Section, SectionInverted } from 'gatsby-mdx-theme'
+
+export default SectionInverted
+
+# Route based code splitting
+
+---
+
+export default FullScreenCode
+
+```shell
+src/
+  pages/
+    about.js
+    index.js
+    contact.js
+```
+
+---
+
+## Commons Chunk
+
+- `react`
+- `react-dom`
+- `@reach/router`
+- `react-helmet`
+- etc.
+
+---
+
+## These are used on _every_ route
+
+### Keep them in one commons bundle so we can cache it.
+
+### `app.common.unique-hash.js`
+
+---
+
+export default FullScreenCode
+
+```jsx
+import React from 'react'
+import Formik from 'formik'
+
+import { Layout, SEO } from '../components'
+
+export default function Contact() {
+  return (
+    <Layout>
+      <SEO title="Contact us" description="Our contact page!" />
+      <Formik>{/* Implement */}</Formik>
+    </Layout>
+  )
+}
+```

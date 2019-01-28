@@ -1,0 +1,114 @@
+import { FullScreenCode, Main, Section, SectionInverted } from 'gatsby-mdx-theme'
+
+export default SectionInverted
+
+# SSR
+## What it is and why it matters
+
+---
+
+## Gatsby generates "static" HTML via SSR APIs
+
+
+---
+
+## But Gatsby _isn't_ server-rendered?
+
+---
+
+## Server side rendering... at build time!
+
+---
+
+export default FullScreenCode
+
+```jsx
+import React from 'react'
+
+import { Content, Layout } from '../components'
+
+export default function IndexPage() {
+  return (
+    <Layout>
+      <Content>
+        <p>Some content!</p>
+      </Content>
+    </Layout>
+  )
+}
+```
+
+---
+
+export default FullScreenCode
+
+```jsx
+import ReactDOMServer from 'react-dom/server'
+import fs from 'fs'
+import path from 'path'
+
+import IndexPage from './src/pages/index.js'
+
+const html = ReactDOMServer.renderToString(<IndexPage />) // plus props!
+
+fs.writeFileSync(path.join('public', 'index.html'), html, 'utf8')
+```
+
+---
+
+export default FullScreenCode
+
+```html
+<div id="___gatsby">
+  <header><h1>Your header</h1></header>
+  <main>
+    <p>Some content!</p>
+  </main>
+</div>
+```
+
+---
+
+export default Section
+
+## Neat.
+
+### Why?
+
+---
+
+- ✅ Performance
+- ✅ SEO
+- ✅ Static content is _easy_
+
+---
+
+## Static content is _easy_
+
+---
+
+## 👋 Goodbye
+
+- Scaling issues
+- Provisioning servers
+- Pain
+
+---
+
+## 👋 Hello
+
+- Easily scalable
+- Hosted on the edge
+- Blazing fast performance
+- Bliss
+
+---
+
+## Gatsby apps are server-side rendered at _build time_
+### This process creates static HTML, which can be deployed anywhere.
+
+---
+
+## Once more, with effect
+
+### Static assets !== Static app

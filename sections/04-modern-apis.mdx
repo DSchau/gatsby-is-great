@@ -1,0 +1,68 @@
+import { FullScreenCode, Main, Section, SectionInverted } from 'gatsby-mdx-theme'
+import Player from 'react-player'
+import { Link, Prefetch } from '../components'
+
+export default SectionInverted
+
+# Modern APIs + Gatsby
+
+---
+
+## This is the _fun_ part 🎉
+
+---
+
+## `IntersectionObserver`
+
+### A browser API to perform some action when some element enters the viewport
+
+---
+
+## `<link rel="prefetch">`
+
+### Prefetch the _next_ resource(s) when the browser is idle
+
+---
+
+<Prefetch />
+
+---
+
+## But wait, there's more!
+
+---
+
+<img src="./assets/addy-pr.png" style={{ height: '100vh'}} />
+
+---
+
+export default FullScreenCode
+
+```jsx
+// Skip prefetching if we know user is on slow or constrained connection
+if (`connection` in navigator) {
+  if ((navigator.connection.effectiveType || ``).includes(`2g`)) {
+    return false
+  }
+  if (navigator.connection.saveData) {
+    return false
+  }
+}
+```
+
+---
+
+## Responsive, lazily loaded images
+
+### with `gatsby-image`
+
+---
+
+<Player url="./assets/using-gatsby-image.mp4" playing={true} loop={true} height="100vh" />
+
+---
+
+- ✅ Load (larger) images once they enter the viewport
+- ✅ Prefetch the page(s) in the background once they enter the viewport
+
+<Link href="https://github.com/dschau/gatsby-is-great">Let's take a look</Link>
