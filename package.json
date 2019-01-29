@@ -21,6 +21,8 @@
     "gatsby": "^2.0.96",
     "gatsby-mdx-theme": "^0.0.6",
     "lodash": "^4.17.11",
+    "react-icons": "^3.3.0",
+    "react-loader-spinner": "^2.3.0",
     "react-player": "^1.9.3",
     "react-twitter-embed": "^2.0.4",
     "styled-components": "^4.1.3",
