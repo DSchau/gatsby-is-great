@@ -1,5 +1,6 @@
 import { FullScreenCode, Main, Section, SectionInverted } from 'gatsby-mdx-theme'
-import { Link } from '../components/'
+import { Emoji, Link, Pullquote } from '../components/'
+import { Background } from '../layouts'
 
 export default SectionInverted
 
@@ -15,7 +16,7 @@ export default SectionInverted
 
 ---
 
-<img src="./assets/webpagetest.png" style={{ height: '100vh' }} />
+<img alt="Screenshot of webpagetest, a tool used to more accurately reflect real-world performance" src="./assets/webpagetest.png" style={{ height: '100vh' }} />
 
 ---
 
@@ -23,11 +24,7 @@ export default SectionInverted
 
 ### Catch performance regressions at PR time!
 
-<Link href="https://github.com/DSchau/gatsby-perf-audit/pull/3">Quick Demo</Link>
-
----
-
-## Just use Gatsby
+<Link href="https://github.com/DSchau/gatsby-perf-audit/pull/4">Quick Demo</Link>
 
 ---
 
@@ -35,4 +32,22 @@ export default SectionInverted
 
 ---
 
+## Poll Question
+
+<Emoji ariaLabel="Icon representing a poll" size={128} style={{ marginTop: '2rem' }}>📊</Emoji>
+
+---
+
 <Link href="https://gatsbyjs.org" large={true}>Demo</Link>
+
+---
+
+export default Background('rebeccapurple')
+
+<Pullquote cite="Smashing Magazine" href="https://www.smashingmagazine.com/2019/01/front-end-performance-checklist-2019-pdf-pages/" fontSize={40}>One way or another, rather than focusing on full page loading time, prioritize page loading as perceived by your customers. That means focusing on a slightly different set of metrics. In fact, choosing the right metric is a process without obvious winners.</Pullquote>
+
+---
+
+export default Section
+
+# #buildWithGatsby

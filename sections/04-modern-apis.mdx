@@ -1,6 +1,6 @@
 import { FullScreenCode, Main, Section, SectionInverted } from 'gatsby-mdx-theme'
 import Player from 'react-player'
-import { Link, Prefetch } from '../components'
+import { Buffering, Link, Prefetch } from '../components'
 
 export default SectionInverted
 
@@ -24,6 +24,8 @@ export default SectionInverted
 
 ---
 
+<!-- TODO: Show IntersectionObserver example -->
+
 ## `<link rel="prefetch">`
 
 ### Prefetch the _next_ resource(s) when the browser is idle
@@ -38,7 +40,7 @@ export default SectionInverted
 
 ---
 
-<img src="./assets/addy-pr.png" style={{ height: '100vh'}} />
+<img alt="Addy Osmani (from Google) sent a pull request optimizing Gatsby's pre-fetch behavior for all users, particularly those on slower connections" src="./assets/addy-pr.png" style={{ height: '100vh'}} />
 
 ---
 
@@ -71,3 +73,13 @@ if (`connection` in navigator) {
 - ✅ Load (larger) images once they enter the viewport
 - ✅ Prefetch the page(s) in the background once they enter the viewport
 - (we'll come back to this!)
+
+---
+
+## Gatsby is _your_ compiler for the web
+
+<img alt="Gatsby logo representing a helpful astronaut/butler to serve as your guide" src="./assets/gatsby-astronaut.png" style={{ maxHeight: '35vh', marginTop: '2.5vh' }} />
+
+---
+
+<Buffering />

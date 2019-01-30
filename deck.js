@@ -3,6 +3,7 @@ import SSR from './sections/02-ssr.mdx'
 import CodeSplitting from './sections/03-route-code-splitting.mdx'
 import ModernAPIs from './sections/04-modern-apis.mdx'
 import PerfTechniques from './sections/05-performance-techniques.mdx'
+import WrapUp from './sections/99-wrap-up.mdx'
 
 import './fonts/Webfonts/futurapt_book_macroman/stylesheet.css'
 import './fonts/Webfonts/futurapt_bookitalic_macroman/stylesheet.css'
@@ -18,5 +19,6 @@ export default [
   ...SSR,
   ...CodeSplitting,
   ...ModernAPIs,
-  ...PerfTechniques
+  ...PerfTechniques,
+  ...WrapUp
 ]

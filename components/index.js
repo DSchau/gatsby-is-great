@@ -1,4 +1,7 @@
 export { default as Button } from './button'
+export { default as Buffering } from './buffering'
+export { default as Emoji } from './emoji'
 export { default as Link } from './link'
 export { default as Prefetch } from './prefetch'
+export { default as Pullquote } from './pullquote'
 export { default as TweetEmbed } from './tweet-embed'

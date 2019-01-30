@@ -1,5 +1,7 @@
-import { Head } from 'mdx-deck'
+import { Head, Notes } from 'mdx-deck'
 import { Main, Section, SectionInverted } from 'gatsby-mdx-theme'
+import { Pullquote } from '../components'
+import { Background } from '../layouts'
 
 export default Main
 
@@ -14,22 +16,26 @@ export default Main
 # Behind the Scenes
 ## What makes Gatsby Great
 
+<Notes>
+  - Hello! As Linda said earlier, I'm a software engineer working for Gatsby.
+</Notes>
+
 ---
 
 export default Section
 
 # Overview
 
-- SSR: What is it and why it matters
+- Server Side Rendering (SSR): What is it and why it matters
 - Route based code splitting
 - Modern APIs + Gatsby
 - Techniques for asserting your app is _actually_ 🔥
 
 ---
 
-> Genuine question, every page is loaded immediatley _[sic]_ on click. Seriously never seen such a quick website before. Any insight as to how they're able to achieve this?
-> 
-> [Reddit thread](https://www.reddit.com/r/webdev/comments/9z5dsr/how_does_reactjs_have_such_a_fast_website/?ref=share&ref_source=link) on ReactJS.org
+export default Background('rebeccapurple')
+
+<Pullquote cite="webdev subreddit" fontSize={40} href="https://www.reddit.com/r/webdev/comments/9z5dsr/how_does_reactjs_have_such_a_fast_website/?ref=share&ref_source=link">Genuine question, every page is loaded immediatley [sic] on click. Seriously never seen such a quick website before. Any insight as to how they're able to achieve this?</Pullquote>
 
 ---
 
