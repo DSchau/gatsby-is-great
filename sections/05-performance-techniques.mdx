@@ -1,5 +1,5 @@
 import { FullScreenCode, Main, Section, SectionInverted } from 'gatsby-mdx-theme'
-import { Emoji, Link, Pullquote } from '../components/'
+import { Emoji, Fit, Link, Pullquote } from '../components/'
 import { Background } from '../layouts'
 
 export default SectionInverted
@@ -32,12 +32,6 @@ export default SectionInverted
 
 ---
 
-## Poll Question
-
-<Emoji ariaLabel="Icon representing a poll" size={128} style={{ marginTop: '2rem' }}>📊</Emoji>
-
----
-
 <Link href="https://gatsbyjs-org-prefetched.netlify.com/" large={true}>Demo</Link>
 
 ---
@@ -50,4 +44,4 @@ export default Background('rebeccapurple')
 
 export default Section
 
-# #buildWithGatsby
+<Fit style={{ color: 'white', backgroundColor: 'rebeccapurple' }}>#buildWithGatsby</Fit>
